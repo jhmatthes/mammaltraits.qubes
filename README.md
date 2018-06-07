@@ -1,9 +1,7 @@
-# How to install R Shiny apps on QUBESHub
+# Mammal traits app - QUBES
 
-This is a simple example used to demonstrate what is needed to host your [R Shiny](https://shiny.rstudio.com/) app on [QUBESHub](https://qubeshub.org).  This particular example is Joe Cheng's [k-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) Shiny app that uses the [iris flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set).
+This is the code that runs a mammal traits [R Shiny](https://shiny.rstudio.com/) app on [QUBESHub](https://qubeshub.org).  
 
-[Launch on R Studio's website](https://shiny.rstudio.com/gallery/kmeans-example.html)
-
-[Launch on QUBESHub](https://qubeshub.org/tools/shiny-app-ex/invoke)
+This app allows users to visualize relationships among metabolic and life history traits for species-level data that include most living and recently extinct mammals from [Jones et. al. (2009)](http://esapubs.org/archive/ecol/e090/184/).
 
 **NOTE**:  You must have an account (*which is free*) in order to run Shiny apps on QUBESHub!

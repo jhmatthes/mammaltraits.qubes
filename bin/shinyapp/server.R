@@ -1,13 +1,6 @@
 library(shiny)
 library(ggplot2)
 
-#Download data from ESA URL
-dat_url <- "http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR05_Aug2008.txt"
-dat  <- data.frame(read.delim(dat_url,header=TRUE, sep="\t",na.strings="-999.00"))
-dat$metmass <- dat$X18.1_BasalMetRate_mLO2hr / dat$X5.1_AdultBodyMass_g
-dat$species <- paste(dat$MSW05_Genus,dat$MSW05_Species,sep=" ")
-order.names <- unique(dat[,1])
-
 #Key for labels
 lab_key <- list()
 lab_key[[56]] <- "Metabolic Rate (mL O2/ g / hr)"

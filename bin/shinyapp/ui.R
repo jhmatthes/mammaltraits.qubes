@@ -1,13 +1,5 @@
 library(shiny)
 
-dat.url <- "http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR05_Aug2008.txt"
-dat  <- data.frame(read.delim(dat.url,header=TRUE, sep="\t",na.strings="-999.00"))
-#colnames(dat[1]) <- "Order"
-#colnames(dat[2]) <- "Family"
-dat$metmass <- dat$X18.1_BasalMetRate_mLO2hr / dat$X5.1_AdultBodyMass_g
-dat$species <- paste(dat$MSW05_Genus,dat$MSW05_Species,sep=" ")
-order.names <- unique(dat[,1])
-
 shinyUI(fluidPage(
   
   titlePanel("Fantastic Beasts: Visualization of the PanTHERIA dataset"),
